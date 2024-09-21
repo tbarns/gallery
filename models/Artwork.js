@@ -14,6 +14,11 @@ const ArtworkSchema = new mongoose.Schema({
     type: String,
     required: true,  // Cloudinary's unique public ID
   },
+  size: {
+    type: String,
+    enum: ['8x10', '11x14'], // Add size options for filtering
+    required: true,
+  },
   createdAt: {
     type: Date,
     default: Date.now,

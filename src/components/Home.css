@@ -1,7 +1,24 @@
-/* Center the title */
-.title {
-    font-size: 3rem;
+/* Navbar */
+.navbar {
+    background-color: #f8f8f8;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .navbar-item {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  /* Center the title */
+  .title {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .subtitle {
+    font-size: 1.5rem;
     margin-bottom: 2rem;
+    color: #666;
   }
   
   /* Carousel container */
@@ -22,14 +39,26 @@
   }
   
   .carousel-item {
-    padding: 2rem;
+    padding: 1rem;
     text-align: center;
   }
   
   .carousel-image {
-    max-width: 70%;
+    max-width: 65%;
     height: auto;
-    border-radius: 5px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .carousel-title {
+    font-size: 1.1rem;
+    margin-top: 10px;
+    color: #333;
+  }
+  
+  .carousel-size {
+    font-size: 0.9rem;
+    color: #888;
   }
   
   /* Filter container */
@@ -39,8 +68,8 @@
   }
   
   .filter-container .input {
-    width: 50%;
-    padding: 10px;
+    width: 40%;
+    padding: 12px;
     font-size: 1.1rem;
     border: 2px solid #ddd;
     border-radius: 5px;
@@ -55,9 +84,22 @@
     text-align: center;
   }
   
+  .box {
+    padding: 1rem;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
   .box img {
     max-width: 100%;
     height: auto;
-    border-radius: 5px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .box p {
+    font-size: 1rem;
+    margin-top: 0.5rem;
   }
   
