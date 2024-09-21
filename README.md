@@ -2,9 +2,9 @@
 
 ## Overview
 
-Welcome to **Portrait Gallery**, a full-stack web application showcasing Timothy Barnaby's pastel portraits on pumice board. This gallery allows users to explore, filter, and upload new artworks, creating an engaging, dynamic experience.
+Welcome to **Portrait Gallery**, a full-stack web application showcasing Timothy Barnaby's pastel portraits on pumice board. This gallery allows users to explore, filter, and shop new artworks.
 
-> **Fun Fact**: This app was built while vibing to **Ari Lennox's Shea Butter Baby** and **Selena’s La Leyenda** — a mix of R&B and Latin royalty that inspired each line of code!
+> **Fun Fact**: This app was built while vibing to **Ari Lennox's Shea Butter Baby** and **Selena’s La Leyenda** — a mix of R&B and Tejano royalty that kept me coding thorugh the struggles.
 
 ![Hero Image](path/to/your/image1.png)
 

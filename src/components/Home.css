@@ -1,3 +1,7 @@
+body{
+    overflow-x: hidden;
+}
+
 /* Navbar */
 .navbar {
     background-color: #f8f8f8;
@@ -25,6 +29,8 @@
   .carousel-container {
     margin-bottom: 3rem;
     position: relative;
+    max-width: 100%;
+
   }
   
   /* Slick slider adjustments */
@@ -38,6 +44,16 @@
     transform: scale(1.25); /* Expands the center image */
   }
   
+
+/* Position the left and right arrows */
+.slick-prev {
+    left: 10px;
+  }
+  
+  .slick-next {
+    right: 10px;
+  }
+
   .carousel-item {
     padding: 1rem;
     text-align: center;
@@ -101,5 +117,34 @@
   .box p {
     font-size: 1rem;
     margin-top: 0.5rem;
+  }
+  
+
+  
+  /* Ensure arrows are smaller on mobile */
+  @media (max-width: 768px) {
+    .slick-prev, .slick-next {
+      width: 30px;
+      height: 30px;
+      padding: 5px;
+    }
+  
+    /* Prevent horizontal overflow on mobile */
+    body, html {
+      overflow-x: hidden;
+    }
+  
+    .carousel-container {
+      padding: 0 10px; /* Add padding on mobile to prevent overflow */
+    }
+  
+    .slick-slide {
+      max-width: 100%; /* Ensure slides fit within the container */
+      margin: 0 auto;
+    }
+  
+    .slick-center {
+      transform: scale(1.15); /* Slightly smaller scaling effect on mobile */
+    }
   }
   
