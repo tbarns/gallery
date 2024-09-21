@@ -1,70 +1,77 @@
-# Getting Started with Create React App
+# Portrait Gallery by Timothy Barnaby
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
 
-## Available Scripts
+Welcome to **Portrait Gallery**, a full-stack web application showcasing Timothy Barnaby's pastel portraits on pumice board. This gallery allows users to explore, filter, and upload new artworks, creating an engaging, dynamic experience.
 
-In the project directory, you can run:
+> **Fun Fact**: This app was built while vibing to **Ari Lennox's Shea Butter Baby** and **Selena’s La Leyenda** — a mix of R&B and Latin royalty that inspired each line of code!
 
-### `npm start`
+![Hero Image](path/to/your/image1.png)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🎧 Coding Vibes: Music Inspiration 🎧
 
-### `npm test`
+### **Ari Lennox - Shea Butter Baby**
+- [Listen on Spotify](https://open.spotify.com/album/7lIBHZ8hbG7mT7KE5sfKQO)
+- [Listen on Apple Music](https://music.apple.com/us/album/shea-butter-baby/1446764379)
+  
+![Shea Butter Baby](https://upload.wikimedia.org/wikipedia/en/0/00/Ari_Lennox_-_Shea_Butter_Baby.png)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Smooth, soulful, and powerful — the perfect soundtrack for creating elegant UI and seamless user experience.
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### **Selena - La Leyenda**
+- [Listen on Spotify](https://open.spotify.com/album/6fCwdjw8HNEXv2J9V3Z4YF)
+- [Listen on Apple Music](https://music.apple.com/us/album/la-leyenda/404596202)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+![Selena - La Leyenda](https://upload.wikimedia.org/wikipedia/en/a/a9/Selena_La_Leyenda_album_cover.png)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Channeling the Queen of Tejano music for that vibrant backend structure and smooth API interactions.
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 🎨 Features
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- **Auto-scrolling Carousel**: Showcases images dynamically with a central enlarged piece, creating a fluid and elegant visual experience.
+- **Static Gallery**: Browse all available artworks in a grid, with the ability to filter by title and size.
+- **Upload Functionality**: Upload new pieces directly into the gallery, with visual confirmation on success.
+- **Filter by Size**: Easily view artworks by medium (8x10 inches) or large (11x14 inches) size.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+![Artworks Preview](path/to/your/image2.png)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+---
 
-## Learn More
+## 🛠️ Tech Stack
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+This project makes use of a robust set of technologies to ensure a smooth experience for both users and administrators.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Frontend:
+- **React**: For creating a responsive, component-based user interface.
+- **Bulma**: A modern CSS framework that simplifies responsive design.
+- **React-Slick**: For the beautiful carousel gallery.
 
-### Code Splitting
+### Backend:
+- **Node.js**: Backend server using Express for smooth API handling.
+- **MongoDB Atlas**: Hosted database for storing artwork details, including size, title, and image links.
+- **Cloudinary**: Image hosting and delivery for the uploaded artwork files.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### Deployment & DevOps:
+- **Fly.io**: Application hosting with Docker integration.
+- **Docker**: For containerization, ensuring consistent environments during development and production.
+- **Git & GitHub**: Version control and repository hosting.
 
-### Analyzing the Bundle Size
+### Extra Tools:
+- **Multer**: For handling file uploads.
+- **Axios**: For making HTTP requests to the backend.
+- **dotenv**: Managing environment variables securely.
+- **ChatGPT (powered by GPT-4)**: My trusted AI partner, providing coding tips, debugging assistance, and continuous support throughout the project build.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+---
 
-### Making a Progressive Web App
+## 🚀 Installation
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+1. Clone the repository:
+   ```bash
+   git clone git@github.com:yourusername/gallery.git
