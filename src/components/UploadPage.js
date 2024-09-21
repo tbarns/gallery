@@ -1,44 +1,33 @@
-import React, { useState } from 'react';
 import axios from 'axios';
+import React, { useState } from 'react';
 
 const UploadPage = () => {
-  const [title, setTitle] = useState('');
   const [file, setFile] = useState(null);
+  const [title, setTitle] = useState('');
 
-  const handleUpload = async (e) => {
+  const onFileChange = (e) => {
+    setFile(e.target.files[0]);
+  };
+
+  const onSubmit = async (e) => {
     e.preventDefault();
 
     const formData = new FormData();
-    formData.append('file', file);
-    formData.append('upload_preset', 'your_cloudinary_preset');
+    formData.append('file', file); // Append the file
+    formData.append('title', title); // Append the title
 
-    const cloudinaryResponse = await axios.post('https://api.cloudinary.com/v1_1/your_cloud_name/image/upload', formData);
-    
-    const newArtwork = {
-      title,
-      imageUrl: cloudinaryResponse.data.secure_url,
-    };
-
-    axios.post('/api/artworks', newArtwork)
-      .then(() => alert('Artwork uploaded successfully'))
-      .catch((error) => console.error('Error uploading artwork:', error));
+    try {
+      const res = await axios.post('/api/artworks', formData);
+      console.log('File uploaded and saved successfully:', res.data);
+    } catch (error) {
+      console.error('Error uploading file:', error.response || error.message || error);
+    }
   };
 
   return (
-    <form onSubmit={handleUpload}>
-      <input
-        type="text"
-        value={title}
-        onChange={(e) => setTitle(e.target.value)}
-        placeholder="Title"
-        required
-      />
-      <input
-        type="file"
-        onChange={(e) => setFile(e.target.files[0])}
-        accept="image/*"
-        required
-      />
+    <form onSubmit={onSubmit}>
+      <input type="text" placeholder="Title" onChange={(e) => setTitle(e.target.value)} />
+      <input type="file" onChange={onFileChange} />
       <button type="submit">Upload</button>
     </form>
   );

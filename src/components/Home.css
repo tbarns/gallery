@@ -1,0 +1,63 @@
+/* Center the title */
+.title {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+  }
+  
+  /* Carousel container */
+  .carousel-container {
+    margin-bottom: 3rem;
+    position: relative;
+  }
+  
+  /* Slick slider adjustments */
+  .slick-slide {
+    opacity: 0.6;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+  }
+  
+  .slick-center {
+    opacity: 1;
+    transform: scale(2.75); /* Expands the center image */
+  }
+  
+  .carousel-item {
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .carousel-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+  
+  /* Filter container */
+  .filter-container {
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  
+  .filter-container .input {
+    width: 50%;
+    padding: 10px;
+    font-size: 1.1rem;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  /* Static gallery */
+  .columns {
+    margin-top: 3rem;
+  }
+  
+  .column.is-one-quarter {
+    text-align: center;
+  }
+  
+  .box img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+  

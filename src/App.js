@@ -1,15 +1,15 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Home from './components/Home.js';  // Renamed to Home for clarity
-import UploadPage from './components/UploadPage.js';
-import './App.css';
+import HomePage from './components/Home';
+import UploadPage from './components/UploadPage';
+// import './App.css';
 
 function App() {
   return (
     <Router>
-      <div className="app-container">
+      <div className="App">
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<HomePage />} />
           <Route path="/upload" element={<UploadPage />} />
         </Routes>
       </div>
