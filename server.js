@@ -5,6 +5,7 @@ const bodyParser = require('body-parser');
 const cloudinary = require('cloudinary').v2;
 const multer = require('multer');
 const path = require('path');
+const Artwork = require('./models/Artwork'); // Import the model
 require('dotenv').config();
 
 // Cloudinary configuration
@@ -28,28 +29,6 @@ mongoose.connect(process.env.MONGO_URI, { useNewUrlParser: true, useUnifiedTopol
   .then(() => console.log('MongoDB connected'))
   .catch((err) => console.error('MongoDB connection error:', err));
 
-// Define Artwork Schema and Model
-const ArtworkSchema = new mongoose.Schema({
-  title: {
-    type: String,
-    required: true,
-  },
-  imageUrl: {
-    type: String,
-    required: true, // Cloudinary secure_url
-  },
-  public_id: {
-    type: String,
-    required: true, // Cloudinary public_id
-  },
-  createdAt: {
-    type: Date,
-    default: Date.now, // Auto-timestamp for when the artwork is added
-  }
-});
-
-const Artwork = mongoose.model('Artwork', ArtworkSchema);
-
 // Get all artworks (Gallery)
 app.get('/api/artworks', (req, res) => {
   console.log('Fetching all artworks from MongoDB...');
@@ -64,23 +43,17 @@ app.get('/api/artworks', (req, res) => {
     });
 });
 
-// Upload a new artwork (image and title)
+// Upload a new artwork (image, title, and size)
 app.post('/api/artworks', upload.single('file'), (req, res) => {
-  const { title } = req.body;
+  const { title, size } = req.body;
 
+ 
   if (!req.file) {
     console.error('No file uploaded.');
     return res.status(400).json({ error: 'No file uploaded' });
   }
 
   console.log('Starting upload to Cloudinary...');
-
-  // Cloudinary upload configuration logging
-  console.log('Cloudinary config:', {
-    cloud_name: process.env.CLOUDINARY_CLOUD_NAME,
-    api_key: process.env.CLOUDINARY_API_KEY,
-    api_secret: process.env.CLOUDINARY_API_SECRET,
-  });
 
   // Upload image to Cloudinary
   cloudinary.uploader.upload_stream({ resource_type: 'image', folder: 'art-gallery' }, (err, result) => {
@@ -91,9 +64,10 @@ app.post('/api/artworks', upload.single('file'), (req, res) => {
 
     console.log('Cloudinary upload successful. Full response:', result);
 
-    // Save new artwork to MongoDB
+    // Save new artwork to MongoDB with size
     const newArtwork = new Artwork({
       title,
+      size, // Include size in the saved artwork
       imageUrl: result.secure_url,  // Save the secure URL returned by Cloudinary
       public_id: result.public_id,  // Save the public_id returned by Cloudinary
     });

@@ -77,6 +77,20 @@ body{
     color: #888;
   }
   
+  .button {
+    background-color: #ffdd57; /* Add a distinct color */
+    color: white;
+    font-size: 1.1rem;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .button:hover {
+    background-color: #f0c040;
+  }
+  
+  
   /* Filter container */
   .filter-container {
     margin-bottom: 2rem;

@@ -46,7 +46,6 @@ const HomePage = () => {
             <div key={art._id} className="carousel-item">
               <img className="carousel-image" src={art.imageUrl} alt={art.title} />
               <p className="carousel-title">{art.title}</p>
-              <p className="carousel-size">{art.size} inches</p> {/* Display artwork size */}
             </div>
           ))}
         </Slider>
@@ -64,7 +63,16 @@ const HomePage = () => {
             <div className="box">
               <img src={art.imageUrl} alt={art.title} />
               <p>{art.title}</p>
-              <p>{art.size} inches</p> {/* Display artwork size */}
+              <p>{art.size.replace(/['"]+/g, '')} inches</p> {/* Display artwork size */}
+              {/* Email Inquiry Button */}
+              <a
+                href={`mailto:tbarnaby1@gmail.com?subject=Inquiring%20about%20${encodeURIComponent(art.title)}&body=Hi,%20I%27m%20interested%20in%20purchasing%20the%20artwork%20titled%20%22${encodeURIComponent(art.title)}%22.%20Please%20let%20me%20know%20the%20details.`}
+                className="button is-primary"
+                style={{ marginTop: '10px' }}
+              >
+                Inquire
+              </a>
+
             </div>
           </div>
         ))}
