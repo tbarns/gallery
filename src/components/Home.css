@@ -18,16 +18,16 @@
   
   .slick-center {
     opacity: 1;
-    transform: scale(2.75); /* Expands the center image */
+    transform: scale(1.25); /* Expands the center image */
   }
   
   .carousel-item {
-    padding: 10px;
+    padding: 2rem;
     text-align: center;
   }
   
   .carousel-image {
-    max-width: 100%;
+    max-width: 70%;
     height: auto;
     border-radius: 5px;
   }
