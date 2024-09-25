@@ -33,6 +33,7 @@ const HomePage = () => {
         <div className="navbar-brand">
           <Link to="/" className="navbar-item">Gallery</Link>
           <Link to="/pricing" className="navbar-item">Pricing Guide</Link>
+          <Link to="/about" className="navbar-item">About Me</Link>  
         </div>
       </nav>
 

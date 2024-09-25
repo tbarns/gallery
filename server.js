@@ -31,10 +31,9 @@ mongoose.connect(process.env.MONGO_URI, { useNewUrlParser: true, useUnifiedTopol
 
 // Get all artworks (Gallery)
 app.get('/api/artworks', (req, res) => {
-  console.log('Fetching all artworks from MongoDB...');
   Artwork.find()
     .then((artworks) => {
-      console.log('Artworks retrieved:', artworks);
+   
       res.json(artworks);
     })
     .catch((err) => {
