@@ -1,9 +1,19 @@
 import React from 'react';
 import './AboutMe.css'; // Optional: For any custom styles
+import { Link } from 'react-router-dom'; // For navigation
 
 const AboutMe = () => {
   return (
     <div className="container">
+   {/* Navbar */}
+   <nav className="navbar is-spaced">
+        <div className="navbar-brand">
+          <Link to="/" className="navbar-item">Gallery</Link>
+          <Link to="/pricing" className="navbar-item">Pricing Guide</Link>
+          <Link to="/about" className="navbar-item">About Me</Link>  
+        </div>
+      </nav>
+
       <h1 className="title has-text-centered has-text-warning">About Timothy Barnaby</h1>
       
       {/* Image section */}
