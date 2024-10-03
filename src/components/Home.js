@@ -37,7 +37,7 @@ const HomePage = () => {
         </div>
       </nav>
 
-      <h1 className="title has-text-centered">Portraits by Timothy Barnaby</h1>
+      <h1 className="title has-text-centered fugaz-one-regular">Portraits by Timothy Barnaby</h1>
       <h2 className="subtitle has-text-centered">All works are pastel paintings on pumice board</h2>
 
       {/* Carousel for the gallery */}
