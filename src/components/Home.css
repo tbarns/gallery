@@ -13,6 +13,11 @@ body{
     font-weight: bold;
   }
   
+  h1{
+  -webkit-text-stroke: #ddd;
+  -webkit-text-stroke-width: 1.5px;
+  }
+  
   /* Center the title */
   .title {
     font-size: 2.5rem;

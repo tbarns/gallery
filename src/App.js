@@ -4,6 +4,7 @@ import HomePage from './components/Home';
 import UploadPage from './components/UploadPage';
 import PricingGuide from './components/PricingGuide';
 import AboutMe from './components/AboutMe';
+import Footer from './components/Footer';
 import './App.css';
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
           <Route path="/upload" element={<UploadPage />} />
           <Route path="/about" element={<AboutMe />} /> 
         </Routes>
+        <Footer/>
       </div>
     </Router>
   );
