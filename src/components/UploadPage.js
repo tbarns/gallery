@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-import './UploadPage.css'; 
+import './UploadPage.css';
 
 const UploadPage = () => {
   const [file, setFile] = useState(null);
   const [title, setTitle] = useState('');
   const [size, setSize] = useState('8x10'); // Default to 8x10
+  const [customSize, setCustomSize] = useState(''); // For custom size input
   const [uploadStatus, setUploadStatus] = useState(null); // New state for feedback
 
   const onFileChange = (e) => {
@@ -13,7 +14,10 @@ const UploadPage = () => {
   };
 
   const onSizeChange = (e) => {
-    setSize(e.target.value); // Update size based on selected radio button
+    setSize(e.target.value);
+    if (e.target.value !== 'custom') {
+      setCustomSize(''); // Clear custom size if a predefined size is selected
+    }
   };
 
   const onSubmit = async (e) => {
@@ -22,14 +26,20 @@ const UploadPage = () => {
     const formData = new FormData();
     formData.append('file', file);
     formData.append('title', title);
-    formData.append('size', size); // Include size in the form data
+
+    if (size === 'custom') {
+      formData.append('size', 'custom'); // Set size to 'custom' for custom artworks
+      formData.append('customSize', customSize); // Use the custom size input
+    } else {
+      formData.append('size', size); // Use predefined size
+    }
 
     try {
       const res = await axios.post('/api/artworks', formData);
-      setUploadStatus('success'); // Set upload status to success
+      setUploadStatus('success');
       console.log('File uploaded and saved successfully:', res.data);
     } catch (error) {
-      setUploadStatus('error'); // Set upload status to error
+      setUploadStatus('error');
       console.error('Error uploading file:', error.response || error.message || error);
     }
   };
@@ -70,6 +80,31 @@ const UploadPage = () => {
               onChange={onSizeChange}
             />
             <label htmlFor="size-large">Large (11x14 inches)</label>
+          </div>
+          <div>
+            <input
+              type="radio"
+              id="size-custom"
+              name="size"
+              value="custom"
+              checked={size === 'custom'}
+              onChange={onSizeChange}
+            />
+            <label htmlFor="size-custom">Custom</label>
+
+            {/* Show custom size input when "Custom" is selected */}
+            {size === 'custom' && (
+              <div>
+                <label htmlFor="customSize">Enter custom size:</label>
+                <input
+                  type="text"
+                  id="customSize"
+                  placeholder="e.g., 60x120 inches"
+                  value={customSize}
+                  onChange={(e) => setCustomSize(e.target.value)}
+                />
+              </div>
+            )}
           </div>
         </div>
 

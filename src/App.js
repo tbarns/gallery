@@ -5,6 +5,8 @@ import UploadPage from './components/UploadPage';
 import PricingGuide from './components/PricingGuide';
 import AboutMe from './components/AboutMe';
 import Footer from './components/Footer';
+import LargeCommissions from './components/LargeCommissions';
+import MargeSeries from './components/MargeSeries';
 import './App.css';
 
 function App() {
@@ -16,6 +18,8 @@ function App() {
           <Route path="/pricing" element={<PricingGuide />} />
           <Route path="/upload" element={<UploadPage />} />
           <Route path="/about" element={<AboutMe />} /> 
+          <Route path="/commissions" element={<LargeCommissions />} />
+          <Route path="/marge" element={<MargeSeries />} />
         </Routes>
         <Footer/>
       </div>

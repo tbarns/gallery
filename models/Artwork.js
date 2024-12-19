@@ -16,8 +16,7 @@ const ArtworkSchema = new mongoose.Schema({
   },
   size: {
     type: String,
-    enum: ['8x10', '11x14'], // Add size options for filtering
-    required: true,
+    required: true, // Allow custom sizes as strings
   },
   createdAt: {
     type: Date,
@@ -25,6 +24,5 @@ const ArtworkSchema = new mongoose.Schema({
   },
 });
 
-// Create and export the Artwork model
 const Artwork = mongoose.model('Artwork', ArtworkSchema);
 module.exports = Artwork;
