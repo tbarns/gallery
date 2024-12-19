@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import Slider from 'react-slick'; // Import react-slick for carousel
 import { Link } from 'react-router-dom'; // For navigation
-import MargeSeries from './MargeSeries';
 import './Home.css'; // Your custom styles
 
 const HomePage = () => {
@@ -32,7 +31,7 @@ const HomePage = () => {
       {/* Navbar */}
       <nav className="navbar is-spaced">
         <div className="navbar-brand">
-          <Link to="/" className="navbar-item">Gallery</Link>
+          <Link to="/" className="navbar-item">Portrait Gallery</Link>
           <Link to="/pricing" className="navbar-item">Pricing Guide</Link>
           <Link to="/about" className="navbar-item">About Me</Link>  
           {/* <Link to="/commissions" className="navbar-item">Large-Scale Commissions</Link> */}
