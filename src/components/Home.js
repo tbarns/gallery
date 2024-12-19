@@ -35,8 +35,8 @@ const HomePage = () => {
           <Link to="/" className="navbar-item">Gallery</Link>
           <Link to="/pricing" className="navbar-item">Pricing Guide</Link>
           <Link to="/about" className="navbar-item">About Me</Link>  
-          <Link to="/commissions" className="navbar-item">Large-Scale Commissions</Link>
-          <Link to="/marge" element={<MargeSeries />} />
+          {/* <Link to="/commissions" className="navbar-item">Large-Scale Commissions</Link> */}
+          <Link to="/marge" className="navbar-item">Marge Series</Link>
         </div>
       </nav>
 

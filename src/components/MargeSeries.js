@@ -3,9 +3,9 @@ import './MargeSeries.css'; // For custom styling
 
 const MargeSeries = () => {
   const images = [
-    { src: '/margeseries/IMG_20191201_151400_370.jpg', title: 'IMG_20191201_151400_370' },
-    { src: '/margeseries/DBD1.jpg', title: 'Marge 2' },
+    { src: '/margeseries/IMG_20191201_151400_370.jpg', title: 'Marge 0' },
     { src: '/margeseries/tim_and_e33.jpg', title: 'Marge 1' },
+    { src: '/margeseries/DBD1.jpg', title: 'Marge 2' },
     { src: '/margeseries/tim_and_e44.jpg', title: 'Marge 3' },
     { src: '/margeseries/tim_and_e117.jpg', title: 'Marge 4' },
     { src: '/margeseries/tim_and_e121.jpg', title: 'Marge 5' },
