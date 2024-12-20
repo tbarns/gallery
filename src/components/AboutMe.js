@@ -4,17 +4,19 @@ import { Link } from 'react-router-dom'; // For navigation
 
 const AboutMe = () => {
   return (
-    <div className="container">
-   {/* Navbar */}
-   <nav className="navbar is-spaced">
-        <div className="navbar-brand">
-          <Link to="/" className="navbar-item">Gallery</Link>
-          <Link to="/pricing" className="navbar-item">Pricing Guide</Link>
-          {/* <Link to="/about" className="navbar-item">About Me</Link>   */}
-        </div>
-      </nav>
+   <div className="container">
+         {/* Navbar */}
+         <nav className="navbar is-spaced">
+           <div className="navbar-brand">
+             <Link to="/" className="navbar-item">Portrait Gallery</Link>
+             <Link to="/pricing" className="navbar-item">Pricing Guide</Link>
+             <Link to="/about" className="navbar-item">About Me</Link>
+             {/* <Link to="/commissions" className="navbar-item">Large-Scale Commissions</Link> */}
+             <Link to="/marge" className="navbar-item">Marge Series</Link>
+           </div>
+         </nav>
 
-      <h1 className="title has-text-centered has-text-warning">Meet the artist: Timothy Barnaby</h1>
+      <h1 className="title has-text-centered has-text-warning">Meet the Artist: Timothy Barnaby</h1>
       
       {/* Image section */}
       <div className="about-image-container">
@@ -28,19 +30,19 @@ const AboutMe = () => {
       {/* Bio Section */}
       <div className="content has-text-left">
         <p>
-          Born in 1988 to American parents on a military base in Massachusetts, Timothy Barnaby, the youngest of four children, spent much of their childhood in solitude, creating and dreaming. These solitary moments of their childhood became the perfect training ground for reflection, allowing them to sit with their work, question it, and explore its deeper meaning.
+          Born in 1988 on a military base in Massachusetts, Timothy Barnaby grew up as the youngest of four children in a transient military family. Much of their childhood was spent in solitude, crafting stories, creating art, and dreaming. These quiet, introspective moments became fertile ground for their artistic practice, fostering a deep sense of reflection and a habit of questioning and exploring the deeper meanings within their work.
         </p>
         <p>
-          A self-trained artist, Timothy first fell in love with ceramics as a teenager. Later, they found a home as an art model for the Gage Academy of Art. This experience fueled their drive to explore the human figure more broadly. Timothy’s passion for self-portraiture and self-referential imagery emerged from a desire to evoke the raw and accessible human experience.
+          A self-taught artist, Timothy first fell in love with ceramics as a teenager. This passion for clay became their gateway into the art world, offering a tactile, grounding medium that shaped their creative foundation. Later, as a figure model at the Gage Academy of Art, Timothy discovered a profound connection to the human form, which fueled their exploration of self-portraiture and self-referential imagery. Their art seeks to evoke the raw, accessible human experience—both deeply personal and universally resonant.
         </p>
         <p>
-          During their time as a model at the Gage Academy, Timothy gained invaluable insights into the expression of light on the human form by sitting in on masterclasses. Techniques traditionally locked behind paywalls and taught only by masters became a part of their daily life, allowing them to internalize and apply these lessons in their work.
+          During their time at Gage Academy, Timothy absorbed invaluable lessons by sitting in on masterclasses with celebrated artists. These sessions, often exclusive and locked behind institutional barriers, became an everyday source of inspiration and technical growth. Observing how light interacts with the human form and internalizing classical techniques helped shape Timothy’s approach to portraiture and figure studies.
         </p>
         <p>
-          A trip to France further deepened Timothy’s passion for portraiture, as they were profoundly moved by the works of Cézanne and Monet.
+          A pivotal trip to France further deepened their passion for portraiture. Encounters with the works of Cézanne and Monet left a lasting impression, instilling a reverence for the interplay of light, color, and emotion in artistic storytelling.
         </p>
         <p>
-          While no medium is off-limits for Timothy, they are most inspired when working with clay and pastels. However, their curiosity and love for innovation drive them to experiment with unconventional materials and tools, pushing boundaries and allowing the creative process to guide them to unexpected places.
+          Timothy’s artistic practice thrives on curiosity and innovation. While ceramics and pastels remain central to their work, they are continually drawn to experiment with unconventional materials and tools, allowing the creative process to guide them into uncharted territories. For Timothy, art is a space of boundless exploration, where tradition meets intuition and the unexpected becomes inspiration.
         </p>
       </div>
     </div>

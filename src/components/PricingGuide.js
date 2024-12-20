@@ -4,12 +4,16 @@ import { Link } from 'react-router-dom';
 const PricingGuide = () => {
   return (
     <div className="container">
-      <nav className="navbar is-spaced">
-        <div className="navbar-brand">
-          <Link to="/" className="navbar-item">Gallery</Link>
-          <Link to="/pricing" className="navbar-item">Pricing Guide</Link>
-        </div>
-      </nav>
+          {/* Navbar */}
+          <nav className="navbar is-spaced">
+            <div className="navbar-brand">
+              <Link to="/" className="navbar-item">Portrait Gallery</Link>
+              <Link to="/pricing" className="navbar-item">Pricing Guide</Link>
+              <Link to="/about" className="navbar-item">About Me</Link>
+              {/* <Link to="/commissions" className="navbar-item">Large-Scale Commissions</Link> */}
+              <Link to="/marge" className="navbar-item">Marge Series</Link>
+            </div>
+          </nav>
 
       <h1 className="title has-text-centered">Pricing Guide</h1>
       <p className="content has-text-centered">
