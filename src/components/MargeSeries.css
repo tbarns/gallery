@@ -34,6 +34,74 @@ body {
   color: white; /* Fixed typo from "whit" to "white" */
 }
 
+/* Modal Styles */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  position: relative;
+  background: #fff;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  max-width: 90%;
+  max-height: 90%;
+  text-align: center;
+}
+
+.modal-image {
+  max-width: 100%;
+  max-height: 80vh;
+  border-radius: 8px;
+}
+
+.modal-title {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: #f00;
+  color: #fff;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.close-button:hover {
+  background: #c00;
+}
+
+.marge-item {
+  cursor: pointer; /* Changes the cursor to a pointer when hovering */
+}
+
+.marge-item:hover .marge-image {
+  transform: scale(1.05); /* Optional: Adds a subtle zoom effect */
+  transition: transform 0.2s ease-in-out;
+}
+
+
 /* Mobile adjustments for smaller screens */
 @media (max-width: 768px) {
   .marge-series-container {
@@ -53,3 +121,4 @@ body {
     font-size: 0.875rem; /* Slightly smaller text on mobile */
   }
 }
+
