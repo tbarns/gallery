@@ -42,7 +42,7 @@ const HomePage = () => {
       <h1 className="title has-text-centered fugaz-one-regular">Portraits by Timothy Barnaby</h1>
       <h2 className="subtitle has-text-centered">All works are pastel paintings on pumice board</h2>
 
-      <div className='pastelGalleryText'> <p className='pastelGalleryText'> This series of pastel portraits blends traditional techniques with a modern perspective, inspired by my time as a figure model for master artists. Each piece begins with a custom-prepared surface, using gesso infused with marble dust to create the perfect texture for layering vibrant pastels. The resulting surfaces grip the pigments, creating luminous layers and rich depth.
+      <div className='pastelGalleryText has-text-left'> <p> This series of pastel portraits blends traditional techniques with a modern perspective, inspired by my time as a figure model for master artists. Each piece begins with a custom-prepared surface, using gesso infused with marble dust to create the perfect texture for layering vibrant pastels. The resulting surfaces grip the pigments, creating luminous layers and rich depth.
 
         The series draws from Vincent van Gogh’s portraits of the working class, reimagining their spirit in today’s context. Saturated colors and dynamic compositions honor the resilience and beauty of everyday lives, offering a commentary on the challenges faced by communities under capitalism. These works seek to connect past and present through the shared humanity of their subjects. Along with the occasional dog becuase damn it, dogs are the best.</p> </div>
       {/* Carousel for the gallery */}

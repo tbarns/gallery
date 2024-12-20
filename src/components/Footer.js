@@ -7,6 +7,7 @@ const Footer = () => {
       <div className="content has-text-centered">
         <p>
           &copy; {new Date().getFullYear()} Timothy Barnaby. All Rights Reserved.
+          
         </p>
         <p>
           <a href="mailto:tbarnaby1@gmail.com">Contact Me</a> | 

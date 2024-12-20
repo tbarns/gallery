@@ -43,7 +43,7 @@ const MargeSeries = () => {
 
       <h1 className="title has-text-centered">Marge Series</h1>
       <h2 className="subtitle has-text-centered">The Icon</h2>
-      <div className="margeText">
+      <div className="margeText has-text-left">
         <p>
           Marge is a character born from a love of contradiction. She is a queer, liberated figure who defies traditional beauty standards. Her unapologetic wrinkles, casual charm, and vibrant energy embrace naturalness in a world fixated on perfection.
           <br />

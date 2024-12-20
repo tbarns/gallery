@@ -19,6 +19,11 @@ body {
   text-align: center;
 }
 
+.margeText{
+  padding: 5px;
+  margin-bottom: 1rem;
+}
+
 .marge-image {
   width: 100%; /* Ensure it fits its container */
   height: auto; /* Maintain aspect ratio */
@@ -32,6 +37,10 @@ body {
   margin-top: 0.5rem;
   font-size: 1rem;
   color: white; /* Fixed typo from "whit" to "white" */
+}
+
+.title{
+  color: rgb(31, 28, 30);
 }
 
 /* Modal Styles */
