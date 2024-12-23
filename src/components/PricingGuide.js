@@ -15,7 +15,7 @@ const PricingGuide = () => {
             </div>
           </nav>
 
-      <h1 className="title has-text-centered">Pricing Guide</h1>
+      <h1 className="title has-text-centered">Pricing Guide for Pastel Portraits</h1>
       <p className="content has-text-centered">
         <strong>8x10 inches:</strong> $500 <br />
         <strong>11x14 inches:</strong> $850 <br />
