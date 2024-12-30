@@ -7,6 +7,7 @@ const PricingGuide = () => {
           {/* Navbar */}
           <nav className="navbar is-spaced">
             <div className="navbar-brand">
+                 <Link to="/" className="navbar-item">Home</Link>
               <Link to="/" className="navbar-item">Portrait Gallery</Link>
               <Link to="/pricing" className="navbar-item">Pricing Guide</Link>
               <Link to="/about" className="navbar-item">About Me</Link>

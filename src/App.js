@@ -7,6 +7,7 @@ import AboutMe from './components/AboutMe';
 import Footer from './components/Footer';
 import LargeCommissions from './components/LargeCommissions';
 import MargeSeries from './components/MargeSeries';
+import PastelPortraits from './components/PastelPortraits';
 import './App.css';
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
           <Route path="/" element={<HomePage />} />
           <Route path="/pricing" element={<PricingGuide />} />
           <Route path="/upload" element={<UploadPage />} />
+          <Route path="/pastel-portraits" element={<PastelPortraits />} />
           <Route path="/about" element={<AboutMe />} /> 
           <Route path="/commissions" element={<LargeCommissions />} />
           <Route path="/marge" element={<MargeSeries />} />
