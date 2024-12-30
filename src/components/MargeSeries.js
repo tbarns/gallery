@@ -34,11 +34,11 @@ const MargeSeries = () => {
     <div className="marge-series-container">
       <nav className="navbar is-spaced">
         <div className="navbar-brand">
-             <Link to="/" className="navbar-item">Home</Link>
-          <Link to="/" className="navbar-item">Portrait Gallery</Link>
-          <Link to="/pricing" className="navbar-item">Pricing Guide</Link>
-          <Link to="/about" className="navbar-item">About Me</Link>
-          <Link to="/marge" className="navbar-item">Marge Series</Link>
+             <Link to="/" className="navbar-item has-text-black">Home</Link>
+          <Link to="/" className="navbar-item has-text-black">Portrait Gallery</Link>
+          <Link to="/pricing" className="navbar-item has-text-black">Pricing Guide</Link>
+          <Link to="/about" className="navbar-item has-text-black">About Me</Link>
+          <Link to="/marge" className="navbar-item has-text-black">Marge Series</Link>
         </div>
       </nav>
 

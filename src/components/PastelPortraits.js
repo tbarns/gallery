@@ -28,19 +28,19 @@ const PastelPortraits = () => {
 
   return (
     <div className="container">
-            <nav className="navbar is-spaced">
+            <nav className="navbar is-spaced ">
                 <div className="navbar-brand">
-                  <Link to="/" className="navbar-item">Home</Link>
-                  <Link to="/pastel-portraits" className="navbar-item">Pastel Portraits</Link>
-                  <Link to="/pricing" className="navbar-item">Pricing Guide</Link>
-                  <Link to="/about" className="navbar-item">About Me</Link>
-                  <Link to="/marge" className="navbar-item">Marge Series</Link>
+                  <Link to="/" className="navbar-item has-text-black">Home</Link>
+                  <Link to="/pastel-portraits" className="navbar-item has-text-black">Pastel Portraits</Link>
+                  <Link to="/pricing" className="navbar-item has-text-black">Pricing Guide</Link>
+                  <Link to="/about" className="navbar-item has-text-black">About Me</Link>
+                  <Link to="/marge" className="navbar-item has-text-black">Marge Series</Link>
                 </div>
               </nav>
       <h1 className="title has-text-centered">Pastel Portraits</h1>
       <h2 className="subtitle has-text-centered">Exploring Humanity Through Pastel</h2>
 
-      <div className='pastelGalleryText'>
+      <div className='pastelGalleryText has-text-left'>
         <p>
           This series of pastel portraits blends traditional techniques with a modern perspective, inspired by my time as a figure model for master artists. Each piece begins with a custom-prepared surface, using gesso infused with marble dust to create the perfect texture for layering vibrant pastels. The resulting surfaces grip the pigments, creating luminous layers and rich depth.
         </p>
